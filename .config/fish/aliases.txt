@@ -1,0 +1,27 @@
+## Aliases ##
+
+## Typo's
+alias cd..='cd ..'
+alias pdw='pwd'
+
+## exa ##
+alias ls='exa -l --header --git'
+
+
+alias bios='systemctl reboot --firmware-setup'
+alias update='sudo dnf update -y && sudo dnf upgrade -y'
+alias refresh='sudo dnf makecache --refresh'
+alias clean='sudo dnf clean packages'
+
+alias ..='cd ..'
+alias ...='cd ../..'
+alias install='sudo dnf install'
+
+alias fishii='asciiquarium'
+alias cmatrix='cmatrix -C cyan'
+
+alias fishconf='cd /home/inferno/.config/fish/config.fish'
+alias dwn='cd $HOME/Downloads'
+alias doc='cd $HOME/Documents'
+alias pic='cd $HOME/Pictures'
+alias ssd='cd /run/media/inferno/alex'
