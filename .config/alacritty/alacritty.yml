@@ -3,9 +3,6 @@ shell:
   args:
     - --login
 
-import:
-  - ~/.config/alacritty/themes/nord.yml
-
 window:
   dimensions:
     columns: 130
@@ -14,14 +11,13 @@ window:
     x: 5
     y: 5
       # decorations: none
+  opacity: 0.9
 
 
 cursor:
   style:
     shape: Underline
     blinking: Off
-
-opacity: 0.9
 
 colors:
   # Default colors
