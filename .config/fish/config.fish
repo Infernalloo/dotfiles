@@ -6,7 +6,8 @@ end
 starship init fish | source
 
 ## aliases ##
-source $HOME/.config/fish/aliases.txt
+#source $HOME/.config/fish/dnf-aliases.txt
+source $HOME/.config/fish/pacman-aliases.txt
 
 ## editor ##
 export EDITOR="/usr/bin/nvim"
