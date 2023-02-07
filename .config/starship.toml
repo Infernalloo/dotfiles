@@ -5,6 +5,9 @@ add_newline = false
 [line_break]
 disabled = true
 
+# Timeout for command executed by starship
+command_timeout = 10000
+
 [aws]
 symbol = "  "
 
