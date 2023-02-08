@@ -19,6 +19,11 @@ cursor:
     shape: Underline
     blinking: Off
 
+font:
+  normal:
+    family: FiraCode Nerd Font
+    style: Regular
+
 colors:
   # Default colors
   primary:
