@@ -18,6 +18,7 @@ alias bios='systemctl reboot --firmware-setup'
 alias update='sudo dnf update -y && sudo dnf upgrade -y'
 alias refresh='sudo dnf makecache --refresh'
 alias clean='sudo dnf clean packages'
+alias install='sudo dnf install'
 
 # Navigation
 alias ..='cd ..'
@@ -30,9 +31,6 @@ alias doc='cd $HOME/Documents'
 alias pic='cd $HOME/Pictures'
 alias alex='cd /run/media/inferno/alex'
 alias fishconf='cd /home/inferno/.config/fish/config.fish'
-
-# Installation
-alias install='sudo dnf install'
 
 # confirm before overwriting something
 alias cp="cp -i"
