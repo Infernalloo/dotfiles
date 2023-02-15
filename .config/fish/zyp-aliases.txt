@@ -1,0 +1,44 @@
+## Aliases ##
+
+# Typo's
+alias cd..='cd ..'
+alias pdw='pwd'
+
+# Files
+alias ls='exa -la --header --git --sort=ext --color=always --group-directories-first'
+alias la='exa -a --header --git --sort=ext --color=always --group-directories-first'
+alias ll='exa -l --header --git --sort=ext --color=always --group-directories-first'
+alias lt='exa -aT --header --git --sort=ext --color=always --group-directories-first'
+alias l.='exa -a --header --git --sort=ext --color=always --group-directories-first | grep "\."'
+
+# System
+alias bios='systemctl reboot --firmware-setup'
+
+# Package Manager
+alias update='sudo zypper -n update'
+alias refresh='sudo zypper -n ref'
+alias upgrade='sudo zypper -n dup'
+alias install='sudo zypper install'
+
+# Navigation
+alias ..='cd ..'
+alias ...='cd ../..'
+alias .3='cd ../../..'
+alias .4='cd ../../../..'
+alias .5='cd ../../../../../'
+alias dwn='cd $HOME/Downloads'
+alias doc='cd $HOME/Documents'
+alias pic='cd $HOME/Pictures'
+alias alex='cd /run/media/inferno/alex'
+alias fishconf='cd /home/inferno/.config/fish/config.fish'
+
+
+# confirm before overwriting something
+alias cp="cp -i"
+alias mv='mv -i'
+alias rm='rm -i'
+
+# Colorize grep output (good for log files)
+alias grep='grep --color=auto'
+alias egrep='egrep --color=auto'
+alias fgrep='fgrep --color=auto'
