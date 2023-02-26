@@ -12,3 +12,5 @@ starship init fish | source
 ## editor ##
 export EDITOR="/usr/bin/nvim"
 
+## clear greeting message ##
+set -g fish_greeting
