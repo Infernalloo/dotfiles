@@ -1,0 +1,28 @@
+shell:
+  program: /bin/fish
+  args:
+    - --login
+
+window:
+  dimensions:
+    columns: 202
+    lines: 44
+  padding:
+    x: 5
+    y: 5
+      # decorations: none
+  opacity: 0.9
+
+
+cursor:
+  style:
+    shape: Underline
+    blinking: Off
+
+#font:
+# normal:
+#   family: Mononoki Nerd Font Mono
+#   style: Regular
+
+import:
+  - /path/to/theme
