@@ -7,7 +7,7 @@ starship init fish | source
 
 ## aliases ##
 #source $HOME/.config/fish/dnf-aliases.txt
-source $HOME/.config/fish/pacman-aliases.txt
+#source $HOME/.config/fish/pacman-aliases.txt
 #source $HOME/.config/fish/apt-aliases.txt
 #source $HOME/.config/fish/zyp-aliases.txt
 
@@ -18,5 +18,5 @@ export EDITOR="/usr/bin/nvim"
 set -g fish_greeting
 
 ## startup ##
-bunnyfetch
+#bunnyfetch
 
