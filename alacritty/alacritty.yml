@@ -19,10 +19,10 @@ cursor:
     shape: Underline
     blinking: Off
 
-font:
- normal:
-   family: Mononoki Nerd Font Mono
-   style: Regular
+# font:
+#  normal:
+#    family: Mononoki Nerd Font Mono
+#    style: Regular
 
 import:
-  - ~/.config/alacritty/themes/catppuccin-macchiato.yml
+  # - ~/.config/alacritty/themes/catppuccin-macchiato.yml
