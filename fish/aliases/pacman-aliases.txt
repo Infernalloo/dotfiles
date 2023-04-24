@@ -17,6 +17,7 @@ alias bios='systemctl reboot --firmware-setup'
 # Package manager
 alias update='sudo pacman -Syu'
 alias install='sudo pacman -S'
+alias remove='sudo pacman -R'
 
 # Navigation
 alias ..='cd ..'
