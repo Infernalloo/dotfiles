@@ -1,4 +1,4 @@
-for_window [class=".*"] border none
+for_window [class=".*"] border pixel 3
 ### Variables
 #
 # Uses the win/meta/super key. Use Mod1 for alt
