@@ -8,8 +8,8 @@ window:
     columns: 202
     lines: 44
   padding:
-    x: 5
-    y: 5
+    x: 20
+    y: 20
       # decorations: none
   opacity: 0.9
 
