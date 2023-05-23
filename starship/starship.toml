@@ -1,13 +1,3 @@
-# Don't print a new line at the start of the prompt
-add_newline = false
-
-# Make prompt a single line instead of two lines
-#[line_break]
-#disabled = true
-
-# Timeout for command executed by starship
-command_timeout = 10000
-
 ## FIRST LINE/ROW: Info & Status
 # First param ─┌
 [username]
@@ -49,7 +39,109 @@ disabled = false
 format = "took [$duration]($style)"
 min_time = 1
 
+
+## SECOND LINE/ROW: Prompt
+# Somethere at the beginning
+# [battery]
+# charging_symbol = ""
+# disabled = true
+# discharging_symbol = ""
+# full_symbol = ""
+#
+# [[battery.display]]  # "bold red" style when capacity is between 0% and 10%
+# disabled = false
+# style = "bold red"
+# threshold = 15
+#
+# [[battery.display]]  # "bold yellow" style when capacity is between 10% and 30%
+# disabled = true
+# style = "bold yellow"
+# threshold = 50
+#
+# [[battery.display]]  # "bold green" style when capacity is between 10% and 30%
+# disabled = true
+# style = "bold green"
+# threshold = 80
+
+# Prompt: optional param 1
+[time]
+disabled = true
+format = " 🕙 $time($style)\n"
+style = "bright-white"
+time_format = "%T"
+
 # Prompt: param 2
 [character]
 error_symbol = " [×](bold red)"
 success_symbol = " [╰─λ](bold blue)"
+
+# SYMBOLS
+[status]
+disabled = false
+format = '[\[$symbol$status_common_meaning$status_signal_name$status_maybe_int\]]($style)'
+map_symbol = true
+pipestatus = true
+symbol = "🔴"
+
+[aws]
+symbol = " "
+
+[conda]
+symbol = " "
+
+[dart]
+symbol = " "
+
+[docker_context]
+symbol = " "
+
+[elixir]
+symbol = " "
+
+[elm]
+symbol = " "
+
+[git_branch]
+symbol = " "
+
+[golang]
+symbol = " "
+
+[hg_branch]
+symbol = " "
+
+[java]
+symbol = " "
+
+[julia]
+symbol = " "
+
+[nim]
+symbol = " "
+
+[nix_shell]
+symbol = " "
+
+[nodejs]
+symbol = " "
+
+[package]
+symbol = " "
+
+[perl]
+symbol = " "
+
+[php]
+symbol = " "
+
+[python]
+symbol = " "
+
+[ruby]
+symbol = " "
+
+[rust]
+symbol = " "
+
+[swift]
+symbol = "ﯣ "
