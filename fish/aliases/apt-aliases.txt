@@ -5,11 +5,11 @@ alias cd..='cd ..'
 alias pdw='pwd'
 
 # File
-alias ls='exa -la --header --git --sort=ext --color=always --group-directories-first'
-alias la='exa -a --header --git --sort=ext --color=always --group-directories-first'
-alias ll='exa -l --header --git --sort=ext --color=always --group-directories-first'
-alias lt='exa -aT --header --git --sort=ext --color=always --group-directories-first'
-alias l.='exa -a --header --git --sort=ext --color=always --group-directories-first | grep "\."'
+alias ls='exa -la --header --sort=ext --color=always --group-directories-first'
+alias la='exa -a --header --sort=ext --color=always --group-directories-first'
+alias ll='exa -l --header --sort=ext --color=always --group-directories-first'
+alias lt='exa -aT --header --sort=ext --color=always --group-directories-first'
+alias l.='exa -a --header --sort=ext --color=always --group-directories-first | grep "\."'
 
 # System
 alias bios='systemctl reboot --firmware-setup'
