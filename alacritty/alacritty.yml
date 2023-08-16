@@ -1,5 +1,5 @@
 shell:
-  program: /bin/fish
+  program: fish
   args:
     - --login
 
@@ -25,4 +25,4 @@ font:
     style: Regular
 
 import :
-  - ~/.config/alacritty/themes/tokyo-night.yaml
+  - ~/.config/alacritty/themes/nord.yaml
