@@ -1,0 +1,22 @@
+window:
+  dimensions:
+    columns: 202
+    lines: 44
+  padding:
+    x: 20
+    y: 20
+      # decorations: none
+  opacity: 0.9
+
+cursor:
+  style:
+    shape: Underline
+    blinking: Off
+
+font:
+  normal:
+    family: JetBrainsMono Nerd Font Mono
+    style: Bold
+
+import :
+  - C:\Users\inferno\AppData\Roaming\alacritty\themes\nord.yaml
