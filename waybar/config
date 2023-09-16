@@ -4,8 +4,8 @@
   "height": 41
   "spacing": 5
   "modules-left": [ "hyprland/workspaces" ],
-  "modules-center": [ ],
-  "modules-right": [ "pulseaudio", "clock", "cpu", "memory", "network", "tray"],
+  "modules-center": [ "clock", "custom/weather"],
+  "modules-right": [ "pulseaudio", "cpu", "memory", "network", "tray"],
 
   "hyprland/workspaces": {
     "disable-scroll": true,
@@ -45,6 +45,10 @@
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
         "today-format": "<b>{}</b>",
         "on-click": "gnome-calendar"
+    },
+
+    "custom/weather": {
+      "exec": "curl 'https://wttr.in/?format=1'",
     },
 
      "cpu": {
