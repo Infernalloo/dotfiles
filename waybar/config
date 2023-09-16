@@ -1,0 +1,59 @@
+{
+  "layer": "top"
+  "position": "top"
+  "height": 41
+  "spacing": 5
+  "modules-left": [ "hyprland/workspaces" ],
+  "modules-center": [ ],
+  "modules-right": [ "pulseaudio", "clock", "cpu", "memory", "network", "tray"],
+
+  "hyprland/workspaces": {
+    "disable-scroll": true,
+    "all-outputs": true,
+    "format": "{icon}"
+    "format-icons": {
+        "1": "<span color=\"#D8DDE9\"></span>",
+        "2": "<span color=\"#88C0D0\"></span>",
+        "3": "<span color=\"#A3BE8C\"></span>",
+        "4": "<span color=\"#D8DDE9\"></span>",
+    },
+
+    "pulseaudio": {
+        "scroll-step": 2, // %, can be a float
+        "format": "{icon} {volume}% {format_source}",
+        "format-bluetooth": "{volume}% {icon} {format_source}",
+        "format-bluetooth-muted": " {icon} {format_source}",
+        "format-muted": " {format_source}",
+        //"format-source": "{volume}% ",
+        //"format-source-muted": "",
+        "format-source": "",
+        "format-source-muted": "",
+        "format-icons": {
+            "headphone": "",
+            "hands-free": "",
+            "headset": "",
+            "phone": "",
+            "portable": "",
+            "car": "",
+            "default": ["", "", ""]
+        },
+        "on-click": "pavucontrol",
+        "on-click-right": "pactl set-source-mute @DEFAULT_SOURCE@ toggle"
+
+     "clock": {
+        "format": "  {:%H:%M   %e %b}",
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        "today-format": "<b>{}</b>",
+        "on-click": "gnome-calendar"
+    },
+
+     "cpu": {
+        "interval": "1",      
+        "format": "  {max_frequency}GHz <span color=\"darkgray\">| {usage}%</span>",
+        "max-length": 13,
+        "min-length": 13,
+        "on-click": "kitty -e htop --sort-key PERCENT_CPU",
+        "tooltip": false
+    },
+  }
+}
